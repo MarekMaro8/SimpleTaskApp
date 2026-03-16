@@ -8,6 +8,7 @@ import org.example.simpletaskapp.dto.Task.TaskMapper;
 import org.example.simpletaskapp.service.TaskService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController()
@@ -31,8 +32,8 @@ public class TaskController {
 
     @GetMapping("/tasks/{id}")
     public ResponseEntity<TaskDto> getTaskById(@PathVariable long id) {
-         TaskDto task = taskService.getTaskById(id);
-         return ResponseEntity.ok(task);
+        TaskDto task = taskService.getTaskById(id);
+        return ResponseEntity.ok(task);
     }
 
     @PostMapping("/tasks")
@@ -42,9 +43,9 @@ public class TaskController {
     }
 
     @PutMapping("/tasks/{id}")
-    public ResponseEntity<TaskDto>  updateTask(@PathVariable long id, @Valid @RequestBody TaskCreationDto taskCreationDto) {
-       TaskDto updatedTask = taskService.updateTask(id, taskCreationDto);
-         return ResponseEntity.ok(updatedTask);
+    public ResponseEntity<TaskDto> updateTask(@PathVariable long id, @Valid @RequestBody TaskCreationDto taskCreationDto) {
+        TaskDto updatedTask = taskService.updateTask(id, taskCreationDto);
+        return ResponseEntity.ok(updatedTask);
     }
 
     @DeleteMapping("/task/{id}")

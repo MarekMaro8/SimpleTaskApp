@@ -6,12 +6,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
+
 @Entity
 @Table(name = "tasks")
 public class Task {
 
 
-@Id
+    @Id
     @GeneratedValue
     private Long id;
 
@@ -29,12 +30,6 @@ public class Task {
         this.description = description;
         this.createdAt = createdAt;
         this.status = status;
-    }
-
-    public enum Status {
-        NEW,
-        IN_PROGRESS,
-        DONE
     }
 
     public String getTitle() {
@@ -71,6 +66,12 @@ public class Task {
 
     public Long getId() {
         return id;
+    }
+
+    public enum Status {
+        NEW,
+        IN_PROGRESS,
+        DONE
     }
 
 }

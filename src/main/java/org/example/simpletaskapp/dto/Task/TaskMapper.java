@@ -18,7 +18,7 @@ public class TaskMapper {
         );
     }
 
-    public Task toEnitity(TaskCreationDto taskCreationDto) {
+    public Task toEntity(TaskCreationDto taskCreationDto) {
 
         Task task = new Task();
         task.setTitle(taskCreationDto.title());

@@ -1,4 +1,5 @@
 package org.example.simpletaskapp.dto.Task;
+
 import jakarta.validation.constraints.NotBlank;
 import org.example.simpletaskapp.model.Task;
 
