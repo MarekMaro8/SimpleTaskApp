@@ -24,11 +24,11 @@ Aplikacja udostępnia interfejs REST API pod bazowym adresem /api.
 
 Dostępne endpointy
 Metoda	Adres URL	Opis
-GET	/api/tasks	Pobiera listę wszystkich zapisanych zadań.
-GET	/api/tasks/{id}	Pobiera szczegółowe informacje o zadaniu o wskazanym identyfikatorze.
-POST	/api/tasks	Tworzy nowe zadanie na podstawie przesłanego obiektu JSON.
-PUT	/api/tasks/{id}	Aktualizuje dane istniejącego zadania o podanym identyfikatorze.
-DELETE	/api/task/{id}	Usuwa zadanie o wskazanym identyfikatorze z systemu.
+- GET	/api/tasks	Pobiera listę wszystkich zapisanych zadań.
+- GET	/api/tasks/{id}	Pobiera szczegółowe informacje o zadaniu o wskazanym identyfikatorze.
+- POST	/api/tasks	Tworzy nowe zadanie na podstawie przesłanego obiektu JSON.
+- PUT	/api/tasks/{id}	Aktualizuje dane istniejącego zadania o podanym identyfikatorze.
+- DELETE	/api/task/{id}	Usuwa zadanie o wskazanym identyfikatorze z systemu.
 Format danych wejściowych (TaskCreationDto)
 
 Funkcjonalności systemu
